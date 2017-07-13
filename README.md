@@ -10,7 +10,7 @@ As this is a Tencent Cloud API, the follow pre-requisites will be needed in your
 *Alternative to this may be to upload a polished word or pdf file with the instructions
 
 ### Pre-requisites
-**Please note that these pre-requisites are only necessary if process is going to be realized by running the API, if it is going to be added trhough the UI please skip this section and go to ""Adding the CDN Host"**
+**Please note that these pre-requisites are only necessary if process is going to be realized by running the API, if it is going to be added trhough the UI please skip this section and go to "Adding the CDN Host"**
 
 This API runs in Python 2.7, therefore Python 2.7 will be needed
   - For more flexibility, please add Python to the PATH
@@ -27,7 +27,7 @@ Follow the next steps to install Python Package “Requests” (HTTP for Humans)
   2.  Extract files from *“requests-0.10.6.tar.gz”*
   3.	Open file with 7_Zip, then open folder “requests-0.10.6”
   4.	Next step is to open the folder “dist”
-  5.	Inside “dist”, anpother folder named “requests-0.10.6” will be found
+  5.	Inside “dist”, another folder named “requests-0.10.6” will be found
   6.	Use 7-Zip to extract this folder
   7.	Suggest location: “C:\mytools\Python\requests-0.10.6”
   8.  Change directory (if necessary) and run 
@@ -44,10 +44,44 @@ Adding a CDN host can be done in two different ways, however both of them will w
   ### Adding a CDN host trhough the interface in the console
   1. Access the console
   2. Click on "Cloud Products" > "CDN"
-  3. Go to 'Domain Management"
+  3. Go to "Domain Management"
   4. Click on "Create a distribution"
   5. Complete all the required fields and press "Submit"
   6. Done! Your CDN will be set in the following 5 minutes!
-  ### Adding a CDN host trhough an API
-  To add a CDN trhough 
+  ### Adding a CDN host trhough the API
+  To add a CDN trhough the API please take in consideration the following documentation:
+    - https://www.qcloud.com/document/api/228/1406
+  Please, follow the code below and replace the parameters in the field with the user's parameters
+  '''
+#!/usr/bin/python
+#-*- coding: utf-8 -*-
+
+from src.QcloudApi.qcloudapi import QcloudApi
+
+module = 'cdn'
+action = 'AddCdnHost'
+config = {
+    'Region': 'gz',
+    'secretId': 'AKIDta2EArHddMqGRMiUhdJkvpTsADzVkUMx',
+    'secretKey': 'SfcIjuoSovmNhk2A2f3EAqIVUDhvvgEX',
+    'method': 'post'
+}
+
+params = {
+    "host" : 'www.riotgames.com.cloudintl-new.dnsv2.com',
+    "projectId": 0,
+    "hostType": "cname",
+    "origin": "www.riotgames.com.edgekey.net",
+    "fwdHost": "www.riotgames.com",
+    "serviceType": "web"
+}
+
+try:
+    # see https://www.qcloud.com/document/api/228/1406
+    service = QcloudApi(module, config)
+    print service.generateUrl(action, params)
+    print service.call(action, params)
+except Exception, e:
+    print 'exception:', e
+```
   
