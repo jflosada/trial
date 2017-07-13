@@ -54,9 +54,10 @@ Adding a CDN host can be done in two different ways, however both of them will w
   6. Done! Your CDN will be set in the following 5 minutes!
   
   ### Adding a CDN host trhough the API
-  To add a CDN trhough the API please take in consideration the following documentation
-    - Link: https://www.qcloud.com/document/api/228/1406
-  Please, follow the code below and replace the parameters in the field with the user's parameters
+  To add a CDN through the API please take in consideration the following documentation:
+      -  https://www.qcloud.com/document/api/228/1406
+    
+  Please, follow the code below and fill in the user's parameters where indicated
 
 ```
 #!/usr/bin/python
@@ -103,3 +104,11 @@ except Exception, e:
     "message": "(20004) Not filed cdn audit no icp [cdn audit no icp [The current domain has not been filed with MIIT for the record]]",
     "codeDesc": 20004
    ```
+   
+   ## License
+   This API is distributed under the license .... [to be completed]
+   
+   ## Support
+   We use GitHub to follow up with clients and possible issues they may have while using our software. Please use the following resources if additional help is required:
+    - Contact us via Twitter to @Username with any additional questions or issues. We will be in toucj with you soon! :D
+    - If you have found a bug, please open an issue 
