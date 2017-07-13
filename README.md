@@ -65,26 +65,38 @@ module = 'cdn'
 action = 'AddCdnHost'
 config = {
     'Region': 'gz',
-    'secretId': 'AKIDta2EArHddMqGRMiUhdJkvpTsADzVkUMx',
-    'secretKey': 'SfcIjuoSovmNhk2A2f3EAqIVUDhvvgEX',
+    'secretId': 'Replace this string with User's ID',
+    'secretKey': 'Replace this string with User's Key',
     'method': 'post'
 }
 
 params = {
-    "host" : 'www.riotgames.com.cloudintl-new.dnsv2.com',
+    "host" : 'Replace this string with name of acceleration domain',
     "projectId": 0,
-    "hostType": "cname",
-    "origin": "www.riotgames.com.edgekey.net",
-    "fwdHost": "www.riotgames.com",
+    "hostType": "cname",                           #Note: If you select FTP, you do not need to enter origin server configurations
+    "origin": "Replace this string with origin configuration",
+    "fwdHost": "Replace this string with Forward Host",
     "serviceType": "web"
 }
 
 try:
-    # see https://www.qcloud.com/document/api/228/1406
     service = QcloudApi(module, config)
     print service.generateUrl(action, params)
     print service.call(action, params)
 except Exception, e:
     print 'exception:', e
 ```
-  
+
+   #### Output
+   - If added successfully:
+   ```
+   "code": 0,
+   "message": "",
+   "codeDesc": "Success"
+   ```
+   - If addittion failed:
+   ```
+    "code": 4000,
+    "message": "(20004) Not filed cdn audit no icp [cdn audit no icp [The current domain has not been filed with MIIT for the record]]",
+    "codeDesc": 20004
+   ```
