@@ -55,7 +55,7 @@ Adding a CDN host can be done in two different ways, however both of them will w
   
   ### Adding a CDN host trhough the API
   To add a CDN trhough the API please take in consideration the following documentation
-    - https://www.qcloud.com/document/api/228/1406
+    - Link: https://www.qcloud.com/document/api/228/1406
   Please, follow the code below and replace the parameters in the field with the user's parameters
 
 ```
