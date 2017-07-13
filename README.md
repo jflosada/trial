@@ -73,7 +73,7 @@ config = {
 params = {
     "host" : 'Replace this string with name of acceleration domain',
     "projectId": 0,
-    "hostType": "cname",                           #Note: If you select FTP, you do not need to enter origin server configurations
+    "hostType": "cname",                    #Note: If you select FTP, you do not need to enter origin server configurations
     "origin": "Replace this string with origin configuration",
     "fwdHost": "Replace this string with Forward Host",
     "serviceType": "web"
