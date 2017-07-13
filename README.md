@@ -1,33 +1,30 @@
-# trial
-Seeing how this works
-
-
-Hello World!
-# Hello World!
-Hey, this is World
-
-$ print ("Hi")
-
-```
-hi
-```
-
 # TEMPLATE: CODE TITTLE // Ex: AddCdnHost
 Here we give a brief explanation of the code (No longer than 1 paragraph) // Ex:
 
-The API AddCdnHost will allow for users to add CDN domains into their consoles. This is very useful as, by only switching some fields into this code, a CDN will be created and activated into the user's console.
+The API AddCdnHost will allow for users to add CDN domains into their consoles. This is very useful as, by only switching some fields into this code, a CDN will be created and activated into the user's console. Please note that this process can be realized in two very different ways, one by using the interface in the console and another by running the API.
 
 ## The Basics
 In here we will describe the pre-requisites needed to run the program, as softawres, packages... // Ex:
-As this is an API, the follow pre-requisites will be needed in your PC to be able to run
-Alternative to this may be to upload a polished word or pdf file with the instructions
+As this is a Tencent Cloud API, the follow pre-requisites will be needed in your PC to be able to run
+
+*Alternative to this may be to upload a polished word or pdf file with the instructions
 
 ### Pre-requisites
-This API runs in Python 2.7, therefore Python 2.7 will be needed. For more flexibility, please add Python to the PATH
+**Please note that these pre-requisites are only necessary if process is going to be realized by running the API, if it is going to be added trhough the UI please skip this section and go to ""Adding the CDN Host"**
+
+This API runs in Python 2.7, therefore Python 2.7 will be needed
+  -For more flexibility, please add Python to the PATH
+  -Download link: https://www.python.org/downloads/windows/
+  
+A program to un-zip files will be neccesary, it is recommended to use 7-ZIP
+  -Download link: http://www.7-zip.org/download.html
+
+An editor will be required to edit python code files, it is recommended to use Note ++ 
+  - Download link: https://notepad-plus-plus.org/ 
 
 Follow the next steps to install Python Package “Requests” (HTTP for Humans):
   1.  Download version 0.10.6 from https://pypi.python.org/pypi/requests/0.10.6#downloads 
-  2.  Extract files from “requests-0.10.6.tar.gz”
+  2.  Extract files from *“requests-0.10.6.tar.gz”*
   3.	Open file with 7_Zip, then open folder “requests-0.10.6”
   4.	Next step is to open the folder “dist”
   5.	Inside “dist”, anpother folder named “requests-0.10.6” will be found
@@ -37,9 +34,20 @@ Follow the next steps to install Python Package “Requests” (HTTP for Humans)
   ```
   “python setup.py install”
   ```
-  9.  If installation is succesful, it will say 
+  9.  If installation is succesful, output will be: 
   ```
   Installed c:\users\.....
   Finished processing dependencies for requests==0.10.6
   ```
+  ## Action that program will do (if multiple ways, describe all possible ways) // Ex: Adding the CDN host
+Adding a CDN host can be done in two different ways, however both of them will work identically:
+  ### Adding a CDN host trhough the interface in the console
+  1. Access the console
+  2. Click on "Cloud Products" > "CDN"
+  3. Go to 'Domain Management"
+  4. Click on "Create a distribution"
+  5. Complete all the required fields and press "Submit"
+  6. Done! Your CDN will be set in the following 5 minutes!
+  ### Adding a CDN host trhough an API
+  To add a CDN trhough 
   
