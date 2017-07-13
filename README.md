@@ -13,11 +13,11 @@ As this is a Tencent Cloud API, the follow pre-requisites will be needed in your
 **Please note that these pre-requisites are only necessary if process is going to be realized by running the API, if it is going to be added trhough the UI please skip this section and go to ""Adding the CDN Host"**
 
 This API runs in Python 2.7, therefore Python 2.7 will be needed
-  -For more flexibility, please add Python to the PATH
-  -Download link: https://www.python.org/downloads/windows/
+  - For more flexibility, please add Python to the PATH
+  - Download link: https://www.python.org/downloads/windows/
   
 A program to un-zip files will be neccesary, it is recommended to use 7-ZIP
-  -Download link: http://www.7-zip.org/download.html
+  - Download link: http://www.7-zip.org/download.html
 
 An editor will be required to edit python code files, it is recommended to use Note ++ 
   - Download link: https://notepad-plus-plus.org/ 
