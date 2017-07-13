@@ -4,12 +4,15 @@ Here we give a brief explanation of the code (No longer than 1 paragraph) // Ex:
 The API AddCdnHost will allow for users to add CDN domains into their consoles. This is very useful as, by only switching some fields into this code, a CDN will be created and activated into the user's console. Please note that this process can be realized in two very different ways, one by using the interface in the console and another by running the API.
 
 ## The Basics
-In here we will describe the pre-requisites needed to run the program, as softawres, packages... // Ex:
+In here we will describe the pre-requisites needed to run the program, as softwares, packages... // Ex:
+
 As this is a Tencent Cloud API, the follow pre-requisites will be needed in your PC to be able to run
 
 *Alternative to this may be to upload a polished word or pdf file with the instructions
 
 ### Pre-requisites
+Here a list of pre-requisites will be given. This list will include programs, packages... with links and steps to download them correctly
+
 **Please note that these pre-requisites are only necessary if process is going to be realized by running the API, if it is going to be added trhough the UI please skip this section and go to "Adding the CDN Host"**
 
 This API runs in Python 2.7, therefore Python 2.7 will be needed
@@ -51,7 +54,7 @@ Adding a CDN host can be done in two different ways, however both of them will w
   6. Done! Your CDN will be set in the following 5 minutes!
   
   ### Adding a CDN host trhough the API
-  To add a CDN trhough the API please take in consideration the following documentation:
+  To add a CDN trhough the API please take in consideration the following documentation
     - https://www.qcloud.com/document/api/228/1406
   Please, follow the code below and replace the parameters in the field with the user's parameters
 
