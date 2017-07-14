@@ -45,7 +45,7 @@ Follow the next steps to install Python Package “Requests” (HTTP for Humans)
   ## Action that program will do (if multiple ways, describe all possible ways) // Ex: Adding the CDN host
 Adding a CDN host can be done in two different ways, however both of them will work identically:
 
-  ### Adding a CDN host trhough the interface in the console
+  ### Adding a CDN host through the interface in the console
   1. Access the console
   2. Click on "Cloud Products" > "CDN"
   3. Go to "Domain Management"
@@ -53,7 +53,7 @@ Adding a CDN host can be done in two different ways, however both of them will w
   5. Complete all the required fields and press "Submit"
   6. Done! Your CDN will be set in the following 5 minutes!
   
-  ### Adding a CDN host trhough the API
+  ### Adding a CDN host through the API
   To add a CDN through the API please take in consideration the following documentation:
   - https://www.qcloud.com/document/api/228/1406
       
