@@ -110,5 +110,5 @@ except Exception, e:
    
    ## Support
    We use GitHub to follow up with clients and possible issues they may have while using our software. Please use the following resources if additional help is required:
-- Contact us via Twitter to @Username with any additional questions or issues. We will be in toucj with you soon! :D
+- Contact us via Twitter to @Username with any additional questions or issues. We will be in touch with you soon! :D
 - If you have found a bug, please open an issue 
