@@ -1,12 +1,12 @@
 # TEMPLATE: CODE TITTLE // Ex: AddCdnHost
-Here we give a brief explanation of the code (No longer than 1 paragraph) // Ex:
+Here a brief explanation of the program is given (No longer than 1 paragraph) // Ex:
 
 The API AddCdnHost will allow for users to add CDN domains into their consoles. This is very useful as, by only switching some fields into this code, a CDN will be created and activated into the user's console. Please note that this process can be realized in two very different ways, one by using the interface in the console and another by running the API.
 
 ## The Basics
-In here we will describe the pre-requisites needed to run the program, as softwares, packages... // Ex:
+In here we will describe the pre-requisites needed to run the program, as software, packages... // Ex:
 
-As this is a Tencent Cloud API, the follow pre-requisites will be needed in your PC to be able to run
+As this is a Tencent Cloud API, the follow pre-requisites will be needed in the user's PC to be able to run the API.
 
 *Alternative to this may be to upload a polished word or pdf file with the instructions
 
@@ -55,6 +55,7 @@ Adding a CDN host can be done in two different ways, however both of them will w
   
   ### Adding a CDN host trhough the API
   To add a CDN through the API please take in consideration the following documentation:
+  
       -  https://www.qcloud.com/document/api/228/1406
     
   Please, follow the code below and fill in the user's parameters where indicated
